@@ -10,6 +10,6 @@
 
 // Создайте страницу, которая спрашивает имя у пользователя и выводит его.
 
-let userName = prompt("Как вас зовут?");
-let userAge = prompt("Сколько вам лет?");
-alert(`Вас зовут ${userName}, вам ${userAge} лет.`);
+// let userName = prompt("Как вас зовут?");
+// let userAge = prompt("Сколько вам лет?");
+// alert(`Вас зовут ${userName}, вам ${userAge} лет.`);
