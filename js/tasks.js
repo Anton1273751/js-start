@@ -216,3 +216,143 @@
 // console.log("░░░░░░░░░░░▌▌░▌▌░░░░░░░░░░░░░░░");
 // console.log("░░░░░░░░░░░▌▌░▌▌░░░░░░░░░░░░░░░");
 // console.log("░░░░░░░░░▄▄▌▌▄▌▌░░░░░░░░░░░░░░░");
+
+const data = [
+  { username: "Ivan", age: 48, gender: "male" },
+  { username: "Danil", age: 29, gender: "male" },
+  { username: "Oleg", age: 58, gender: "male" },
+  { username: "Yuri", age: 32, gender: "male" },
+  { username: "Alex", age: 38, gender: "male" },
+  { username: "Isabella", age: 35, gender: "female" },
+  { username: "Oksana", age: 26, gender: "female" },
+  { username: "Igor", age: 24, gender: "male" },
+  { username: "Vladislav", age: 22, gender: "male" },
+  { username: "Valentina", age: 48, gender: "female" },
+  { username: "Sofia", age: 13, gender: "female" },
+  { username: "Danil", age: 80, gender: "male" },
+  { username: "Vitaliy", age: 17, gender: "male" },
+];
+
+//Написать функцию getStr, которая принимает параметром объект!!!, и возвращает строку ввида - "Уважаемая(ый) username, тебе - age лет."
+
+// getStr({ username: "Vitaliy", age: 17, gender: "male" }) // "Уважаемый Vitaliy, тебе - 17 лет."
+// getStr({ username: "Sofia", age: 13, gender: "female" }) // "Уважаемая Sofia, тебе - 13 лет."
+
+// function getStr(obj) {
+//   return `Уважаем${obj.gender === "male" ? "ый" : "ая"} ${obj.username}, тебе ${
+//     obj.age
+//   } лет`;
+// }
+
+// console.log(getStr(data[1]));
+// console.log(getStr(data[3]));
+// console.log(getStr(data[4]));
+// console.log(getStr(data[5]));
+// console.log(getStr(data[6]));
+// console.log(getStr(data[7]));
+
+// Task 1
+// Сделайте функцию, которая возвращает квадрат числа. Число передается параметром.
+
+// function SquareOfTheNumber(num) {
+//   alert(num**=2)
+// }
+
+// // SquareOfTheNumber(121)
+
+// function SquareOfTheNumber(num) {
+//   return (num **= 2);
+// }
+// console.log(SquareOfTheNumber(2325));
+
+// Task 2
+// Сделайте функцию, которая возвращает сумму двух чисел.
+
+// function getSum(num1,num2) {
+//   return num1+num2
+// }
+
+// console.log (getSum(24213151,26121226))
+
+//// Task 3
+// Сделайте функцию, которая отнимает от первого числа второе и делит на третье.
+
+// function getNum(num1,num2,num3) {
+//   return (num1-num2)/num3
+// }
+
+// console.log(getNum(100,50,2))
+
+// Task 4
+// Сделайте функцию, которая принимает параметром число от 1 до 7, а возвращает день недели на русском языке.
+
+// function DaysOfTheWeek(num) {
+//   switch (num) {
+//     case 1:
+//       alert("Понедельник");
+//       break;
+//     case 2:
+//       alert("Вторник");
+//       break;
+//     case 3:
+//       alert("Среда");
+//       break;
+//     case 4:
+//       alert("Четверг");
+//       break;
+//     case 5:
+//       alert("Пятница");
+//       break;
+//     case 6:
+//       alert("Суббота");
+//       break;
+//     case 7:
+//       alert("Восскресенье");
+//       break;
+//     default:
+//       alert("Введите число от 1 до 7");
+//   }
+// }
+
+// console.log(DaysOfTheWeek(7))
+
+// Task 5
+
+// // Сделайте функцию isNumberInRange, которая параметром принимает число
+//  и проверяет, что оно больше нуля и меньше 10.
+//  Если это так - пусть функция возвращает true, если не так - false.
+
+// function isNumberInRange(num) {
+//   if (num > 0 && num < 10) {
+//     alert(true);
+//   } else alert(false);
+// }
+
+// console.log(isNumberInRange(5));
+
+// // Task 6
+// // Сделайте функцию isEven() (even - это четный), которая параметром принимает целое число и проверяет: четное оно или нет.
+// Если четное - пусть функция возвращает true, если нечетное - false.
+
+// function isEven(num) {
+//   if (num % 2 == 0) {
+//     alert("Четное");
+//   } else alert("Нечетное");
+// }
+
+// console.log(isEven(21));
+
+// ***
+// // Дано число. Сложите его цифры. Если сумма получилась более 9-ти, опять сложите его цифры.
+//  И так, пока сумма не станет однозначным числом(9 и менее).
+
+// function getNum(num) {
+//   let sum = num+num
+//   if (sum > 9) {
+//     alert("Складываем еще раз");
+//   } else if (sum < 9) {
+//     alert(`Сумма равна ${sum}`);
+//   }
+// }
+
+// console.log(getNum(5))
