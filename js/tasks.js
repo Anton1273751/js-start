@@ -235,8 +235,8 @@ const data = [
 
 //Написать функцию getStr, которая принимает параметром объект!!!, и возвращает строку ввида - "Уважаемая(ый) username, тебе - age лет."
 
-// getStr({ username: "Vitaliy", age: 17, gender: "male" }) // "Уважаемый Vitaliy, тебе - 17 лет."
-// getStr({ username: "Sofia", age: 13, gender: "female" }) // "Уважаемая Sofia, тебе - 13 лет."
+// getStr({ username: "Vitaliy", age: 17, gender: "male" }); // "Уважаемый Vitaliy, тебе - 17 лет."
+// getStr({ username: "Sofia", age: 13, gender: "female" }); // "Уважаемая Sofia, тебе - 13 лет."
 
 // function getStr(obj) {
 //   return `Уважаем${obj.gender === "male" ? "ый" : "ая"} ${obj.username}, тебе ${
@@ -244,28 +244,61 @@ const data = [
 //   } лет`;
 // }
 
-// console.log(getStr(data[1]));
-// console.log(getStr(data[3]));
-// console.log(getStr(data[4]));
-// console.log(getStr(data[5]));
-// console.log(getStr(data[6]));
-// console.log(getStr(data[7]));
+// function showStrings(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     const element = arr[i];
+
+//     if (element.age <= 18) {
+//       console.log(getStr(element));
+//     }
+//   }
+// }
+
+// showStrings(data);
+
+// const arrOfSalaries = [
+//   { name: "John", salary: 23000 },
+//   { name: "Ivan", salary: 120000 },
+//   { name: "Anton", salary: 50000 },
+//   { name: "Danil", salary: 160000 },
+// ];
+
+// for (let el of arrOfSalaries) {
+//   console.log(el);
+// }
+
+// function getSumSalary(arr) {
+//   let sum = 0;
+//   for (let el of arrOfSalaries) {
+//     sum += el.salary;
+//   }
+//   return sum;
+// }
+
+// console.log(getSumSalary(arrOfSalaries));
+
+// function getSumSalary(arr) {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i].salary;
+//   }
+//   return sum;
+// }
+
+// console.log(getSumSalary(arrOfSalaries));
 
 //ФУНКЦИИ
 
 // Task 1
 // Сделайте функцию, которая возвращает квадрат числа. Число передается параметром.
 
-// function SquareOfTheNumber(num) {
-//   alert(num**=2)
-// }
-
-// // SquareOfTheNumber(121)
-
-// function SquareOfTheNumber(num) {
+// function squareOfTheNumber(num) {
 //   return (num **= 2);
 // }
-// console.log(SquareOfTheNumber(2325));
+// console.log(squareOfTheNumber(25));
+
+// let squareOfTheNumber = (num) => num *= 2
+// console.log(squareOfTheNumber(23));
 
 // Task 2
 // Сделайте функцию, которая возвращает сумму двух чисел.
@@ -274,7 +307,8 @@ const data = [
 //   return num1+num2
 // }
 
-// console.log (getSum(24213151,26121226))
+// let getSum = (num1, num2) => num1 + num2;
+// console.log(getSum(5125125,62241));
 
 //// Task 3
 // Сделайте функцию, которая отнимает от первого числа второе и делит на третье.
@@ -283,7 +317,8 @@ const data = [
 //   return (num1-num2)/num3
 // }
 
-// console.log(getNum(100,50,2))
+// let getNum = (num1, num2, num3) => (num1 - num2) / num3;
+// console.log(getNum(12512521,500,87))
 
 // Task 4
 // Сделайте функцию, которая принимает параметром число от 1 до 7, а возвращает день недели на русском языке.
@@ -291,32 +326,61 @@ const data = [
 // function DaysOfTheWeek(num) {
 //   switch (num) {
 //     case 1:
-//       alert("Понедельник");
-//       break;
+//       return "Понедельник";
+
 //     case 2:
-//       alert("Вторник");
-//       break;
+//       return "Вторник";
+
 //     case 3:
-//       alert("Среда");
-//       break;
+//       return "Среда";
+
 //     case 4:
-//       alert("Четверг");
-//       break;
+//       return "Четверг";
+
 //     case 5:
-//       alert("Пятница");
-//       break;
+//       return "Пятница";
+
 //     case 6:
-//       alert("Суббота");
-//       break;
+//       return "Суббота";
+
 //     case 7:
-//       alert("Восскресенье");
-//       break;
+//       return "Восскресенье";
+
 //     default:
-//       alert("Введите число от 1 до 7");
+//       return "Введите число от 1 до 7";
 //   }
 // }
 
-// console.log(DaysOfTheWeek(7))
+// console.log(DaysOfTheWeek(5));
+
+// let daysOfTheWeek = (num) => {
+//   switch (num) {
+//     case 1:
+//       return "Понедельник";
+
+//     case 2:
+//       return "Вторник";
+
+//     case 3:
+//       return "Среда";
+
+//     case 4:
+//       return "Четверг";
+
+//     case 5:
+//       return "Пятница";
+
+//     case 6:
+//       return "Суббота";
+
+//     case 7:
+//       return "Восскресенье";
+
+//     default:
+//       return "Введите число от 1 до 7";
+//   }
+// };
+// console.log(daysOfTheWeek(6));
 
 // Task 5
 
@@ -329,8 +393,14 @@ const data = [
 //     alert(true);
 //   } else alert(false);
 // }
-
 // console.log(isNumberInRange(5));
+
+// let isNumberInRange = (num) => {
+//   if (num > 0 && num < 10) {
+//     return true;
+//   }else return false;
+// }
+// console.log(isNumberInRange(10));
 
 // // Task 6
 // // Сделайте функцию isEven() (even - это четный), которая параметром принимает целое число и проверяет: четное оно или нет.
@@ -341,8 +411,15 @@ const data = [
 //     alert("Четное");
 //   } else alert("Нечетное");
 // }
-
 // console.log(isEven(21));
+
+// let isEven = (num) => {
+//   if (num % 2 === 0) {
+//     return "Четное";
+//   } else return "Нечетное";
+// };
+
+// console.log(isEven(40));
 
 // ***
 // // Дано число. Сложите его цифры. Если сумма получилась более 9-ти, опять сложите его цифры.
@@ -358,3 +435,5 @@ const data = [
 // }
 
 // console.log(getNum(5))
+
+
