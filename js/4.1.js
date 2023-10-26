@@ -34,21 +34,21 @@
 
 //Сумма свойств объекта
 
-// let salaries = {
-//   John: 100,
-//   Ann: 160,
-//   Pete: 130,
-// };
+let salaries = {
+  John: 100,
+  Ann: 160,
+  Pete: 130,
+};
 
-// let sum = 0;
-// let sumSalary = (obj) => {
-//   for (let key in obj) {
-//     sum += salaries[key];
-//   }
-//   return sum;
-// };
+let sum = 0;
+let sumSalary = (obj) => {
+  for (let n in obj) {
+    sum += salaries[n];
+  }
+  return sum;
+};
 
-// console.log(sumSalary(salaries));
+console.log(sumSalary(salaries));
 
 //Умножаем все числовые свойства на 2
 

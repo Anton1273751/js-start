@@ -263,9 +263,9 @@ const data = [
 //   { name: "Danil", salary: 160000 },
 // ];
 
-// // for (let el of arrOfSalaries) {
-// //   console.log(el);
-// // }
+// // // for (let el of arrOfSalaries) {
+// // //   console.log(el);
+// // // }
 
 // function getSumSalary(arr) {
 //   let sum = 0;
