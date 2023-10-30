@@ -78,3 +78,105 @@
 
 // console.log(array);
 
+// Создайте строку с вашем именем и строку с вашей фамилией. Выведите эти данные на экран.
+
+// let userName = "Антон";
+// let userSurname = " Чесноков";
+
+// console.log(userName + userSurname);
+
+// Создайте переменную str и присвойте ей строку '!!!'. Выведите значение этой переменной на экран.
+
+// let str = "!!!";
+
+// alert(str);
+// console.log(str);
+
+// Создайте переменную с текстом 'java' и переменную с текстом 'script'.
+// С помощью этих переменных и операции сложения строк выведите на экран строку 'javascript'.
+
+// let text = "java";
+// let secondtext = "script";
+
+// console.log(text + secondtext);
+// Создайте переменную с текстом 'hello' и переменную с текстом 'world'.
+// С помощью этих переменных и операции сложения строк выведите на экран строку 'hello world'.
+
+// let text = "hello";
+// let secondtext = " world";
+
+// console.log(text + secondtext);
+
+// Запишите в переменную какую-нибудь строку. Выведите на экран длину вашей строки.
+
+// let text = "dsafisdfjisdjfisjdfijsdf123214124j";
+
+// console.log(text.length);
+
+// Перепишите следующий код через вставку переменных:
+// let str1 = "xxx";
+// let str2 = "yyy";
+// // let txt  = 'aaa ' + str1 + ' bbb ' + str2 + ' ccc';
+
+// let txt = `aaa` + ` ${str1} ` + `bbb` + ` ${str2}` + ` ccc`;
+
+// console.log(txt);
+
+// Запишите в переменную str строку, состоящую из символов 'a', 'b', 'c',
+// причем после каждого символа, кроме последнего, должен стоять перенос строки.
+
+// let str1 = "a\nb\nc";
+
+// console.log(str1);
+
+// // Дана строка 'js'. Сделайте из нее строку 'JS'.
+
+// let str = "js";
+// console.log(str.toUpperCase());
+
+// Дана строка 'JS'. Сделайте из нее строку 'js'.
+
+// let str = "JS";
+
+// console.log(str.toLowerCase());
+
+//  Дана строка 'я учу javascript!'. Найдите количество символов в этой строке.
+
+// let text = 'я учу javascript!'
+// console.log(text.length);
+
+// Дана строка 'я учу javascript!'.
+// Вырежите из нее слово 'учу' и слово 'javascript' тремя разными способами(через substr, substring, slice)
+
+// let text = 'я учу javascript!'
+
+// console.log(text.substr(2, 4));
+// console.log(text.substring(2,5));
+// console.log(text.slice(2,5));
+
+// Дана строка 'я учу javascript!'. Найдите позицию подстроки 'учу'.
+
+// let text = "я учу javascript!";
+
+// let posishionStr = text.slice(2, 5);
+
+// console.log(posishionstr.length);
+
+// Дана переменная str, в которой хранится какой - либо текст.
+// Реализуйте обрезание длинного текста по следующему принципу: если количество символов этого текста больше заданного в переменной n,
+// то в переменную result запишем первые n символов строки str и добавим в конец троеточие '...'.
+// В противном случае в переменную result запишем содержимое переменной str.?
+
+// let text = "Some text";
+
+// let getText = (_str) => {
+//   let num = 5;
+//   let quanSimbol = srt.length;
+//   let result;
+//   if (quanSimbol > n) {
+//     result = quanSimbol.slice(0, num) + "...";
+//     return result;
+//   }
+// };
+
+// console.log(getText(text));
