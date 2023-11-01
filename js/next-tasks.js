@@ -162,21 +162,43 @@
 
 // console.log(posishionstr.length);
 
-// Дана переменная str, в которой хранится какой - либо текст.
+// 13 Дана переменная str, в которой хранится какой - либо текст.
 // Реализуйте обрезание длинного текста по следующему принципу: если количество символов этого текста больше заданного в переменной n,
 // то в переменную result запишем первые n символов строки str и добавим в конец троеточие '...'.
 // В противном случае в переменную result запишем содержимое переменной str.?
 
-// let text = "Some text";
+// let str = "Some text";
 
-// let getText = (_str) => {
+// let getText = (text) => {
 //   let num = 5;
-//   let quanSimbol = srt.length;
-//   let result;
-//   if (quanSimbol > n) {
-//     result = quanSimbol.slice(0, num) + "...";
-//     return result;
-//   }
+
+//   if (text.length > num) {
+//     return (result = text.slice(0, num) + "...");
+//   } else return (result = text);
 // };
 
-// console.log(getText(text));
+// console.log(getText(str));
+
+// 14. Создайте переменную str и присвойте ей значение 'abcde'.
+// Обращаясь к отдельным символам этой строки выведите на экран символ 'a', символ 'c', символ 'e'.
+
+// let str = "abcde";
+
+// console.log(str[0]);
+// console.log(str[2]);
+// console.log(str[4]);
+
+// 15. Создайте переменную num и присвойте ей значение '12345'.
+// Найдите произведение(умножение) цифр этого числа. ??
+
+// let num = "12345";
+
+// let getNum = (numb) => {
+//   let nNum = 1;
+//   for (let i = 0; i < numb.length; i++) {
+//     nNum *= numb[i];
+//   }
+//   return nNum;
+// };
+
+// console.log(getNum(num));

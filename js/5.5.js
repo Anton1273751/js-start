@@ -32,9 +32,9 @@
 
 // Переведите текст вида border-left-width в borderLeftWidth
 
-let text = "my-short-string";
+// let text = "my-short-string";
 
-let camelize = (str) => {
+// let camelize = (str) => {
 
     
-};
+// };
