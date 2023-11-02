@@ -81,7 +81,7 @@
 // Создайте строку с вашем именем и строку с вашей фамилией. Выведите эти данные на экран.
 
 // let userName = "Антон";
-// let userSurname = " Чесноков";
+// let userSurname = "/nЧесноков";
 
 // console.log(userName + userSurname);
 
