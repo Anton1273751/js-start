@@ -380,20 +380,20 @@ let num = "999793";
 // console.log(firstArr);
 // console.log(secondArr);
 
-const getNumSum = (str) => {
-  arr = str.split("");
-  let firstSumm = 0;
-  let secondSumm = 0;
-  let firstArr = arr.slice(0, 3);
-  let secondArr = arr.slice(3, 6);
-  for (let index = 0; index < arr.length/2; index++) {
-    firstSumm += +firstArr[index];
-    secondSumm += +secondArr[index + arr.length / 2];
-  }
+// const getNumSum = (str) => {
+//   arr = str.split("");
+//   let firstSumm = 0;
+//   let secondSumm = 0;
+//   let firstArr = arr.slice(0, 3);
+//   let secondArr = arr.slice(3, 6);
+//   for (let index = 0; index < arr.length/2; index++) {
+//     firstSumm += +firstArr[index];
+//     secondSumm += +secondArr[index + arr.length / 2];
+//   }
 
-  if (firstSumm == secondSumm) {
-    console.log("да");
-  } else console.log("нет");
-};
+//   if (firstSumm == secondSumm) {
+//     console.log("да");
+//   } else console.log("нет");
+// };
 
-getNumSum(num);
+// getNumSum(num);
