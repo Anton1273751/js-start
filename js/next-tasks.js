@@ -17,13 +17,19 @@
 // [4, 2, 5, 19, 13, 0, 10]
 // Найдите квадратный корень из суммы кубов его элементов. Для решения воспользуйтесь циклом for.
 
-// let array = [4, 2, 5, 19, 13, 0, 10];
+// let array = [4, 2, 5, 19, 13, 0, 10, 125];
 
 // let getSumCubes = (arr) => {
 //   let sum = 0;
 //   for (let i of arr) {
 //     sum += i ** 3;
 //   }
+//   return sum;
+// };
+
+// let getSumCubes = (arr) => {
+//   let sum = 0;
+//   arr.forEach((element) => (sum += element ** 3));/// метод forEeach ничего не возрвашает.
 //   return sum;
 // };
 
@@ -42,15 +48,21 @@
 // Найдите квадратный корень из 587. Округлите результат в большую и меньшую стороны,
 // запишите результаты округления в объект с ключами 'floor' и 'ceil'.
 
-// let numb = 587;
+// const numb = 587;
 
-// let getSquareRoot = (num) => {
+// const getSquareRoot = (num) => {
 //   let result = Math.sqrt(num);
 //   return result;
 // };
 
-// console.log(Math.ceil(getSquareRoot(numb)));
-// console.log(Math.floor(getSquareRoot(numb)));
+// const getRoundObj = (num) => {
+//   return {
+//     floor: Math.ceil(num),
+//     ceil: Math.floor(num),
+//   };
+// };
+
+// console.log(getRoundObj(getSquareRoot(numb)));
 
 // 6
 // // Даны числа 4, -2, 5, 19, -130, 0, 10. Найдите минимальное и максимальное число.
@@ -64,7 +76,16 @@
 // 7
 // Выведите на экран случайное целое число от 1 до 100.
 
-// let numbRandom = Math.random() * 100;
+// const generateRandomArr = (length, maxNum) => {
+//   const arr = [];
+//   for (let i = 0; i < length; i++) {
+//     arr.push(Math.round(Math.random() * maxNum));
+//   }
+//   return arr;
+// };
+
+// console.log(generateRandomArr(10, 500));
+// let numbRandom = Math.floor(Math.random() * 100) + 1;
 // console.log(Math.round(numbRandom));
 
 // 8
@@ -81,9 +102,9 @@
 // Создайте строку с вашем именем и строку с вашей фамилией. Выведите эти данные на экран.
 
 // let userName = "Антон";
-// let userSurname = "/nЧесноков";
+// let userSurname = "Чесноков";
 
-// console.log(userName + userSurname);
+// console.log(userName[0]);
 
 // Создайте переменную str и присвойте ей строку '!!!'. Выведите значение этой переменной на экран.
 
@@ -125,7 +146,9 @@
 // Запишите в переменную str строку, состоящую из символов 'a', 'b', 'c',
 // причем после каждого символа, кроме последнего, должен стоять перенос строки.
 
-// let str1 = "a\nb\nc";
+// let str1 = `a
+// n
+// b`;
 
 // console.log(str1);
 
@@ -253,18 +276,28 @@
 //       return "Зима";
 //   }
 // };
+// let getMoth = (month) => {
+//   const calendar = {
+//     1: 'January',
+//     2: 'Feb',
+//     3: "Marth"
+//   }
 
-// console.log(getMoth(month));
+//   return calendar[month]
+// };
+
+// console.log(getMoth(2));
 
 // 18. Дана строка, состоящая из символов, например, 'abcde'.
 //     Проверьте, что первым символом этой строки является буква 'a'.Если это так - выведите 'да', в противном случае выведите 'нет'.
 
 // const str = "abcde";
 
-// // const getStr = (...str) => {
-// //     let result = str.indexOf('a')
-// //   return result;
-// // };
+// const getStr = (str, firstLetter) => {
+//     let result = str.startsWith(firstLetter)
+//   return result ? 'Yes' : 'No';
+// };
+
 // const getStr = (str) => {
 //   if (str[0] === "a") {
 //     console.log("да");
@@ -284,3 +317,83 @@
 // };
 
 // getFirstSimbol(num);
+
+// *** Задача на циклы / массивы / функции.
+
+// Написать функцию, которая принимает строку вида: "    SoMe      WORD  and mORE SOme WORDs   with            some SPAcEs    "
+
+// Возвращает строку вида: "#SomeWordAndMoreSomeWordsWithSomeSpaces"
+// Функция берет любую строку, и генерирует хештег. Примеры выше.
+// Если длинна выходных данных получается больше 140 символов, или меньше 2х символов - функция вернет false
+
+// Методы которые могут пригодиться - .trim(), .split(), .join(), .toUpperCase, .toLowerCase(), .push(), .slice()
+// Посмотреть документацию на методы можно тут -
+
+// const str = "dsfsdpgsg";
+
+// const generateHashTag = (str) => {
+//   let arr = str.trim().split(" ");
+//   arr = arr.filter((elem) => elem.length);
+//   arr = arr.map((elem) => elem[0].toUpperCase() + elem.slice(1).toLowerCase());
+//   arr = arr.join("");
+
+//   const result = "#" + arr;
+//   if (result.length > 140 || result.length < 2) {
+//     return false;
+//   }
+
+//   return arr;
+// };
+
+// console.log(generateHashTag(str));
+
+// console.log("".length); // 0 -> false
+
+// 20. Дана строка из 3 - х цифр.
+// Найдите сумму этих цифр.
+// То есть сложите как числа первый символ строки, второй и третий.
+
+// const numStr = "567";
+
+// const getNumSum = (str) => {
+//   let sum = 0;
+//   arr = str.split("");
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += +arr[i];
+//   }
+//   return sum;
+// };
+
+// console.log(getNumSum(numStr));
+
+// 21. Дана строка из 6 - ти цифр.Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр.
+//  Если это так - выведите 'да', в противном случае выведите 'нет'.
+
+let num = "999793";
+
+// let arr = num.split("");
+// let firstSumm = 0;
+// let secondSumm = 0;
+// let firstArr = arr.slice(0, 3);
+// let secondArr = arr.slice(3, 6);
+
+// console.log(firstArr);
+// console.log(secondArr);
+
+const getNumSum = (str) => {
+  arr = str.split("");
+  let firstSumm = 0;
+  let secondSumm = 0;
+  let firstArr = arr.slice(0, 3);
+  let secondArr = arr.slice(3, 6);
+  for (let index = 0; index < arr.length/2; index++) {
+    firstSumm += +firstArr[index];
+    secondSumm += +secondArr[index + arr.length / 2];
+  }
+
+  if (firstSumm == secondSumm) {
+    console.log("да");
+  } else console.log("нет");
+};
+
+getNumSum(num);
