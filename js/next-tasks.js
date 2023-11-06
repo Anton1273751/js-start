@@ -369,31 +369,111 @@
 // 21. Дана строка из 6 - ти цифр.Проверьте, что сумма первых трех цифр равняется сумме вторых трех цифр.
 //  Если это так - выведите 'да', в противном случае выведите 'нет'.
 
-let num = "999793";
-
-// let arr = num.split("");
-// let firstSumm = 0;
-// let secondSumm = 0;
-// let firstArr = arr.slice(0, 3);
-// let secondArr = arr.slice(3, 6);
-
-// console.log(firstArr);
-// console.log(secondArr);
-
-// const getNumSum = (str) => {
-//   arr = str.split("");
-//   let firstSumm = 0;
-//   let secondSumm = 0;
+// let num = "999999";
+// const CheckingArraySums = (str) => {
+//   let arr = str.split("");
 //   let firstArr = arr.slice(0, 3);
 //   let secondArr = arr.slice(3, 6);
-//   for (let index = 0; index < arr.length/2; index++) {
-//     firstSumm += +firstArr[index];
-//     secondSumm += +secondArr[index + arr.length / 2];
-//   }
+//   let sum1 = firstArr.reduce((acc, elem) => {
+//     return (acc += +elem);
+//   }, 0);
 
-//   if (firstSumm == secondSumm) {
+//   let sum2 = secondArr.reduce((acc, elem) => {
+//     return (acc += +elem);
+//   }, 0);
+//   if (sum1 === sum2) {
 //     console.log("да");
 //   } else console.log("нет");
 // };
 
-// getNumSum(num);
+// console.log(CheckingArraySums(num));
+
+// const arr = [1, 3, 3, 7, 5];
+
+// const even = (elem) => elem % 2 === 0;
+
+// console.log(arr.some(even));
+
+// function isBiggerThan10(element, index, array) {
+//   return element > 10;
+// }
+// [2, 5, 8, 1, 4].some(isBiggerThan10); // false
+// [12, 5, 8, 1, 4].some(isBiggerThan10); // true
+
+// [2, 5, 8, 1, 4].some((elem) => elem > 10); // false
+// [12, 5, 8, 1, 4].some((elem) => elem > 10); // tru
+
+// Задание 1:
+// Написать функцию getFullNameFromArray,
+// которая принимает массив пользователя и возвращает строку с полным именем
+// Примеры:
+// const user = ["Вася", "Пупкин"]
+// getFullNameFromArray(user) // "Вася Пупкин"
+
+// const user = ["Вася", "Пупкин"];
+// const getFullNameFromArray = (arr) => {
+//   return arr.join(' ')
+// };
+
+// console.log(getFullNameFromArray(user));
+
+// Задание 2:
+// Написать функцию getLength, которая возвращает длину переданного массива
+// Примеры:
+// getLength([1,2,3]) // 3
+
+// const arr = [1, 2, 3];
+
+// let getLength = (arr) => {
+//   return result = arr.length;
+// };
+
+// console.log(getLength(arr));
+
+// Задание 3:
+// Написать функцию getLength, getFullLength, которая принимает два массива и
+//  возвращает их общую длину(сумму длин) используйте функцию из предыдущего задания в решении
+// Примеры:
+// getFullLength([1,2], [3,4]) // 4
+
+// let arr1 = [24, 25, 45];
+// let arr2 = [94, 35, 75];
+
+// const getFullLength = (arr1, arr2) => {
+//   let array = arr1.concat(arr2);
+//   return array.length;
+// };
+
+// console.log(getFullLength(arr1,arr2));
+
+// Задание 4:
+// Написать функцию getLast, которая возвращает последний элемент переданного массива
+// но не изменяет исходный массив
+// Примеры:
+// getLast([1,2,3]) // 3
+// getLast([1,2,3,4,5]) // 5
+
+// const arr = [5, 7, 237,56];
+// const getLast = (arr) => {
+//   return arr.pop();
+// };
+
+// console.log(getLast(arr));
+
+// Задание 5:
+// Написать функцию sumLastNumbers,
+//  которая принимает два массива
+//   и возвращает сумму их последних элементов используйте функцию из предыдущего задания в решении
+// Примеры:
+// sumLastNumbers([1,2], [3,4]) // 6
+// sumLastNumbers([1,2,3], [3,4,6]) // 9
+
+// const arr1 = [23, 67, 800];
+// const arr2 = [23, 67, 600];
+
+// const sumLastNumbers = (arr1, arr2) => {
+//   let sum = 0;
+//   return (sum = arr1.pop() + arr2.pop());
+// };
+
+// console.log(sumLastNumbers(arr1, arr2));
