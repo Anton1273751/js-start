@@ -520,10 +520,20 @@
 
 // let str = "Anton";
 
-
 // // const insert_dash = (str) => {
 // //   let result = str.split("").join('-').toUpperCase();
 // //   return result;
 // // };
 
 // // console.log(insert_dash(str));
+// Задание № 5 Напишите функцию comparison(str1, str2), которая сравнивает строки без учёта регистра символов.
+
+// let str1 = "aNTon";
+// let str2 = "Antonh";
+// const comparison = (str1, str2) => {
+//   if (str1.toLowerCase() === str2.toLowerCase()) {
+//     return console.log("Строки равны");
+//   } else return console.log("Строки не равны");
+// };
+
+// console.log(comparison(str1, str2));
