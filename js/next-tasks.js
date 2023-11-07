@@ -476,4 +476,13 @@
 //   return (sum = arr1.pop() + arr2.pop());
 // };
 
-// console.log(sumLastNumbers(arr1, arr2));
+// Задание №1
+// Напишите функцию, возвращающую строку str с заглавным первым символом
+
+// let str = "hello";
+
+// const getUpper = (str) => {
+//   return str[0].toUpperCase() + str.slice(1);
+// };
+
+// console.log(getUpper(str));
