@@ -613,3 +613,116 @@
 // };
 
 // console.log(arrFilter(fruits));
+
+// const num = [200, 100, 50, 40, 700, 1200];
+
+// console.log(num.map((elem) => (elem * 10) / 100 + elem));
+
+// Заполните массив случайными числами из промежутка от 1 до 100.
+
+// const arr = [];
+
+// // for (let index = 1; index <= 100; index++) {
+// //   arr.push(Math.round(Math.random() * 100));
+// // }
+
+// // console.log(arr);
+
+// function sliceIntoChunks(arr, chunkSize) {
+//   const res = [];
+//   for (let i = 0; i < arr.length; i += chunkSize) {
+//     const chunk = arr.slice(i, i + chunkSize);
+//     res.push(chunk);
+//   }
+//   return res;
+// }
+
+// const arr = [1, 2, 3, 4, 5, 6];
+// console.log(sliceIntoChunks(arr, 2));
+
+// Вам будет предоставлено слово.Ваша задача — вернуть средний символ слова.
+//  Если длина слова нечетная, верните средний символ.Если длина слова четная, верните 2 средних символа. ????????
+
+// const str = "test";
+
+// // console.log(str.substring(1, str.length / 2 + 1));
+
+// console.log(str.substr(str.length - 1 / 2), 2 - (str.length % 2));
+
+// // const getMiddle = (str) => {
+// //   return str.substr((str.length - 1) / 2, 2 - (str.length % 2));
+// // };
+
+// // console.log(getMiddle(str));
+
+// const arr = [1, 2, -3, -4, 5];
+
+// // const invert = (arr) => {
+// //   return arr.map((elem) => (elem > 0 ? elem * -1 : elem * -1));
+// // };
+
+// const invert = (array) => array.map((num) => -num);
+// console.log(invert(arr));
+
+// const num = 50;
+
+// const numberToString = (num) => {
+//   return num.toString();
+// };
+
+// console.log(typeof(numberToString(num)));
+
+// Вам нужно удвоить целое число и вернуть его.
+
+// const doubleInteger = (i) => {
+//   return i * 2;
+// };
+
+// console.log(doubleInteger(num));
+
+// Банкоматы допускают использование 4- или 6-значных PIN-кодов, а PIN-коды не могут содержать ничего, кроме ровно 4 или ровно 6 цифр.
+
+// Если функции передана действительная строка PIN-кода, верните true, иначе верните false.?????
+
+// const pin = "873676".toUpperCase;
+// const num = +pin;
+
+// //   console.log(num.toString().length);
+// const validatePIN = (pin) => {
+//     const num = +pin;
+//   if (num===NaN) {
+
+//   }
+
+//   if (num.toString().length === 4 || num.toString().length === 6) {
+//     return true;
+//   }
+//   if (num.toString() < 0) {
+//     return false;
+//   }
+// };
+
+// console.log(validatePIN(pin));
+
+// const str = 'jlfsd';
+// const makeUpperCase = (str) => {
+//   return str.toUpperCase();
+// };
+
+// console.log(makeUpperCase(str));
+// const arr = [1, 2, 3, 4];
+// let sum = 0;
+// for (let index = 0; index < arr.length; index++) {
+//   sum *= arr[index];
+// }
+
+// const grow = (arr) => {
+//   let result = 1;
+//   for (let index = 0; index < arr.length; index++) {
+//    console.log((result *= arr[index]));
+//   }
+//   return result;
+// };
+// console.log(grow(arr));
+
+// const grow = (x) => x.reduce((a, b) => a * b);
