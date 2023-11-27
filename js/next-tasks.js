@@ -512,28 +512,30 @@
 
 // // const getTrimText = (str) => {
 //   let arr = str.trim().split("");
-//  arr.map((elem)=>)
-// // };
+//  isFinite()
+// };
 
 // Задание № 4 Напишите функцию insert_dash(str), которая принимает строку str в качестве аргумента и вставляет тире(-) между словами.
 // При этом все символы строки необходимо перевести в верхний регистр.
 
 // let str = "Anton";
 
-// // const insert_dash = (str) => {
-// //   let result = str.split("").join('-').toUpperCase();
-// //   return result;
-// // };
+// const insert_dash = (str) => {
+//   let result = str.split("").join('-').toUpperCase();
+//   return result;
+// };
 
-// // console.log(insert_dash(str));
+// console.log(insert_dash(str));
 // Задание № 5 Напишите функцию comparison(str1, str2), которая сравнивает строки без учёта регистра символов.
 
 // let str1 = "aNTon";
-// let str2 = "Antonh";
+// let str2 = "Antonjhg";
 // const comparison = (str1, str2) => {
 //   if (str1.toLowerCase() === str2.toLowerCase()) {
-//     return console.log("Строки равны");
-//   } else return console.log("Строки не равны");
+//     return "Строки равны"
+//   } else return "Строки не равны";
 // };
 
 // console.log(comparison(str1, str2));
+
+

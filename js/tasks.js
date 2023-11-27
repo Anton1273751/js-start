@@ -217,21 +217,21 @@
 // console.log("░░░░░░░░░░░▌▌░▌▌░░░░░░░░░░░░░░░");
 // console.log("░░░░░░░░░▄▄▌▌▄▌▌░░░░░░░░░░░░░░░");
 
-const data = [
-  { username: "Ivan", age: 48, gender: "male" },
-  { username: "Danil", age: 29, gender: "male" },
-  { username: "Oleg", age: 58, gender: "male" },
-  { username: "Yuri", age: 32, gender: "male" },
-  { username: "Alex", age: 38, gender: "male" },
-  { username: "Isabella", age: 35, gender: "female" },
-  { username: "Oksana", age: 26, gender: "female" },
-  { username: "Igor", age: 24, gender: "male" },
-  { username: "Vladislav", age: 22, gender: "male" },
-  { username: "Valentina", age: 48, gender: "female" },
-  { username: "Sofia", age: 13, gender: "female" },
-  { username: "Danil", age: 80, gender: "male" },
-  { username: "Vitaliy", age: 17, gender: "male" },
-];
+// const data = [
+//   { username: "Ivan", age: 48, gender: "male" },
+//   { username: "Danil", age: 29, gender: "male" },
+//   { username: "Oleg", age: 58, gender: "male" },
+//   { username: "Yuri", age: 32, gender: "male" },
+//   { username: "Alex", age: 38, gender: "male" },
+//   { username: "Isabella", age: 35, gender: "female" },
+//   { username: "Oksana", age: 26, gender: "female" },
+//   { username: "Igor", age: 24, gender: "male" },
+//   { username: "Vladislav", age: 22, gender: "male" },
+//   { username: "Valentina", age: 48, gender: "female" },
+//   { username: "Sofia", age: 13, gender: "female" },
+//   { username: "Danil", age: 80, gender: "male" },
+//   { username: "Vitaliy", age: 17, gender: "male" },
+// ];
 
 //Написать функцию getStr, которая принимает параметром объект!!!, и возвращает строку ввида - "Уважаемая(ый) username, тебе - age лет."
 
@@ -541,4 +541,75 @@ const data = [
 
 // console.log(getArray(array));
 
+//  Дано некоторое число:
+// 12345
 
+// let num = 12345;
+
+// let str = num.toString();
+
+// let arr = str.split("");
+
+// const getsum = (arr) => {
+//   let sum = 0;
+
+//   for (let index = 0; index < arr.length; index++) {
+//     sum += +arr[index];
+//   }
+//   return sum;
+// };
+
+// console.log(getsum(arr));
+
+//Заполните массив целыми числами от 1 до 10.
+
+// const arr = [];
+
+// for (let index = 1; index <= 10; index++) {
+//   arr.push(index);
+// }
+
+// console.log(arr);
+
+// Заполните массив четными числами из промежутка от 1 до 100.
+
+// const arr = [];
+
+// for (let index = 1; index <= 100; index++) {
+//   if (index % 2 === 0) {
+//     arr.push(index);
+//   }
+// }
+
+// console.log(arr);
+
+// Округлите эти дроби до одного знака в дробной части.
+
+// const arr = [1.456, 2.155, 3.56, 4.1, 5.34];
+
+// for (let index = 0; index < arr.length; index++) {
+//   console.log(arr[index].toFixed(1));
+// }
+
+// Дан массив со строками. Оставьте в этом массиве только те строки, которые начинаются на http://.
+
+// const fruits = ["apple", "banana", "http://grapes", "mango", "http://orange"];
+
+// // console.log(fruits[2].substring(0, 7));
+// const arrFilter = (arr) => {
+//   return arr.filter((elem) => elem.substring(0, 7) === "http://");
+// };
+
+// console.log(arrFilter(fruits));
+
+// Дан массив со строками. Оставьте в этом массиве только те строки, которые заканчиваются на .html. ??????
+
+// const fruits = ["apple", "bananahtml.", "grapes", "mangohtml.", "orange"];
+
+// console.log(fruits[1].substring(fruits[1].length - 5));
+
+// const arrFilter = (arr) => {
+//   return arr.filter((elem) => elem.substring(elem.length - 5) === "html");
+// };
+
+// console.log(arrFilter(fruits));
