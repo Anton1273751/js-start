@@ -726,3 +726,436 @@
 // console.log(grow(arr));
 
 // const grow = (x) => x.reduce((a, b) => a * b);
+
+// const a = "xyaabbbccccdefww";
+// const b = "xxxxyyyyabklmopq";
+
+// const longest = (a, b) => {
+//   const arr = a.concat(b).split("").sort();
+//   const c = arr.filter((element, index) => {
+//     return arr.indexOf(element) === index;
+//   });
+//   return c.join("");
+// };
+
+// console.log(longest(a, b));
+
+// const longest = (s1, s2) => [...new Set(s1 + s2)].sort().join("");// альтернатива
+
+// function longest(s1, s2) {
+//   let whole = "";
+//   let f = "";
+//   if (s1.includes("a")) {
+//     whole += "a";
+//   }
+//   if (s1.includes("b")) {
+//     whole += "b";
+//   }
+//   if (s1.includes("c")) {
+//     whole += "c";
+//   }
+//   if (s1.includes("d")) {
+//     whole += "d";
+//   }
+//   if (s1.includes("e")) {
+//     whole += "e";
+//   }
+//   if (s1.includes("f")) {
+//     whole += "f";
+//   }
+//   if (s1.includes("g")) {
+//     whole += "g";
+//   }
+//   if (s1.includes("h")) {
+//     whole += "h";
+//   }
+//   if (s1.includes("i")) {
+//     whole += "i";
+//   }
+//   if (s1.includes("j")) {
+//     whole += "j";
+//   }
+//   if (s1.includes("k")) {
+//     whole += "k";
+//   }
+//   if (s1.includes("l")) {
+//     whole += "l";
+//   }
+//   if (s1.includes("m")) {
+//     whole += "m";
+//   }
+//   if (s1.includes("n")) {
+//     whole += "n";
+//   }
+//   if (s1.includes("o")) {
+//     whole += "o";
+//   }
+//   if (s1.includes("p")) {
+//     whole += "p";
+//   }
+//   if (s1.includes("q")) {
+//     whole += "q";
+//   }
+//   if (s1.includes("r")) {
+//     whole += "r";
+//   }
+//   if (s1.includes("s")) {
+//     whole += "s";
+//   }
+//   if (s1.includes("t")) {
+//     whole += "t";
+//   }
+//   if (s1.includes("u")) {
+//     whole += "u";
+//   }
+//   if (s1.includes("v")) {
+//     whole += "v";
+//   }
+//   if (s1.includes("w")) {
+//     whole += "w";
+//   }
+//   if (s1.includes("x")) {
+//     whole += "x";
+//   }
+//   if (s1.includes("y")) {
+//     whole += "y";
+//   }
+//   if (s1.includes("z")) {
+//     whole += "z";
+//   }
+
+//   if (s2.includes("a")) {
+//     whole += "a";
+//   }
+//   if (s2.includes("b")) {
+//     whole += "b";
+//   }
+//   if (s2.includes("c")) {
+//     whole += "c";
+//   }
+//   if (s2.includes("d")) {
+//     whole += "d";
+//   }
+//   if (s2.includes("e")) {
+//     whole += "e";
+//   }
+//   if (s2.includes("f")) {
+//     whole += "f";
+//   }
+//   if (s2.includes("g")) {
+//     whole += "g";
+//   }
+//   if (s2.includes("h")) {
+//     whole += "h";
+//   }
+//   if (s2.includes("i")) {
+//     whole += "i";
+//   }
+//   if (s2.includes("j")) {
+//     whole += "j";
+//   }
+//   if (s2.includes("k")) {
+//     whole += "k";
+//   }
+//   if (s2.includes("l")) {
+//     whole += "l";
+//   }
+//   if (s2.includes("m")) {
+//     whole += "m";
+//   }
+//   if (s2.includes("n")) {
+//     whole += "n";
+//   }
+//   if (s2.includes("o")) {
+//     whole += "o";
+//   }
+//   if (s2.includes("p")) {
+//     whole += "p";
+//   }
+//   if (s2.includes("q")) {
+//     whole += "q";
+//   }
+//   if (s2.includes("r")) {
+//     whole += "r";
+//   }
+//   if (s2.includes("s")) {
+//     whole += "s";
+//   }
+//   if (s2.includes("t")) {
+//     whole += "t";
+//   }
+//   if (s2.includes("u")) {
+//     whole += "u";
+//   }
+//   if (s2.includes("v")) {
+//     whole += "v";
+//   }
+//   if (s2.includes("w")) {
+//     whole += "w";
+//   }
+//   if (s2.includes("x")) {
+//     whole += "x";
+//   }
+//   if (s2.includes("y")) {
+//     whole += "y";
+//   }
+//   if (s2.includes("z")) {
+//     whole += "z";
+//   }
+
+//   if (whole.includes("a")) {
+//     f += "a";
+//   }
+//   if (whole.includes("b")) {
+//     f += "b";
+//   }
+//   if (whole.includes("c")) {
+//     f += "c";
+//   }
+//   if (whole.includes("d")) {
+//     f += "d";
+//   }
+//   if (whole.includes("e")) {
+//     f += "e";
+//   }
+//   if (whole.includes("f")) {
+//     f += "f";
+//   }
+//   if (whole.includes("g")) {
+//     f += "g";
+//   }
+//   if (whole.includes("h")) {
+//     f += "h";
+//   }
+//   if (whole.includes("i")) {
+//     f += "i";
+//   }
+//   if (whole.includes("j")) {
+//     f += "j";
+//   }
+//   if (whole.includes("k")) {
+//     f += "k";
+//   }
+//   if (whole.includes("l")) {
+//     f += "l";
+//   }
+//   if (whole.includes("m")) {
+//     f += "m";
+//   }
+//   if (whole.includes("n")) {
+//     f += "n";
+//   }
+//   if (whole.includes("o")) {
+//     f += "o";
+//   }
+//   if (whole.includes("p")) {
+//     f += "p";
+//   }
+//   if (whole.includes("q")) {
+//     f += "q";
+//   }
+//   if (whole.includes("r")) {
+//     f += "r";
+//   }
+//   if (whole.includes("s")) {
+//     f += "s";
+//   }
+//   if (whole.includes("t")) {
+//     f += "t";
+//   }
+//   if (whole.includes("u")) {
+//     f += "u";
+//   }
+//   if (whole.includes("v")) {
+//     f += "v";
+//   }
+//   if (whole.includes("w")) {
+//     f += "w";
+//   }
+//   if (whole.includes("x")) {
+//     f += "x";
+//   }
+//   if (whole.includes("y")) {
+//     f += "y";
+//   }
+//   if (whole.includes("z")) {
+//     f += "z";
+//   }
+//   return f;
+// }
+
+// const arr = [36, 7, 57, 12, 7, 9, 342, 23, 89];
+
+// const bublesort = (arr) => {
+//   for (let index = 0; index < arr.length; index++) {
+//     for (let index = 0; index < arr.length - 1 - index; index++) {
+//       if (arr[index] > arr[index + 1]) {
+//         const tmp = arr[index];
+//         arr[index] = arr[index + 1];
+//         arr[index + 1] = tmp;
+//       }
+//     }
+//   }
+//   console.log(arr);
+// };
+
+// bublesort(arr);
+
+// const str = "This is an example!";
+
+// const reverseWords = (str) => {
+//   const arr = str.split(" ");
+//   return arr.map((elem) => elem.split("").reverse().join("")).join(" ");
+// };
+
+// console.log(reverseWords(str));
+
+// const arr = ["a", "b", "c"];
+
+// const number = (array) => {
+//   return array.map((elem, index) => `${index + 1}: ` + elem);
+// };
+
+// console.log(number(arr));
+
+// const n = 11;
+
+// const testEven = (n) => (n % 2 === 0 ? true : false);
+
+// console.log(testEven(n));
+
+// const str = "!!!sdi!!!fsdf!!!";
+
+// const removeExclamationMarks = (s) => s.replace(/!/g, ""); //короткий пример
+
+// console.log(removeExclamationMarks(str));
+
+// const removeExclamationMarks = (str) => {
+//   return str
+//     .split("")
+//     .filter((elem) => elem != "!")
+//     .join("");
+// };
+
+// console.log(removeExclamationMarks(str));
+
+// const arr = [
+//   ("english", "Welcome"),
+//   ("czech", "Vitejte"),
+//   ("danish", "Velkomst"),
+//   ("dutch", "Welkom"),
+//   ("estonian", "Tere tulemast"),
+//   ("finnish", "Tervetuloa"),
+//   ("flemish", "Welgekomen"),
+//   ("french", "Bienvenue"),
+//   ("german", "Willkommen"),
+//   ("irish", "Failte"),
+//   ("italian", "Benvenuto"),
+//   ("latvian", "Gaidits"),
+//   ("lithuanian", "Laukiamas"),
+//   ("polish", "Witamy"),
+//   ("spanish", "Bienvenido"),
+//   ("swedish", "Valkommen"),
+//   ("welsh", "Croeso"),
+// ];
+
+// // console.log(arr[4]);
+
+// const greet = (str) => {
+//   switch (str) {
+//     case "english":
+//       return "Welcome";
+//     case "czech":
+//       return "Vitejte";
+//     case "danish":
+//       return "Velkomst";
+//     case "dutch":
+//       return "Welkom";
+//     case "english":
+//       return "Welcome";
+//     case "estonian":
+//       return "Tere tulemast";
+//     case "finnish":
+//       return "Tervetuloa";
+//     case "flemish":
+//       return "Welgekomen";
+//     case "french":
+//       return "Bienvenue";
+//     case "german":
+//       return "Willkommen";
+//     case "irish":
+//       return "Failte";
+//     case "italian":
+//       return "Benvenuto";
+//     case "lithuanian":
+//       return "Laukiamas";
+//     case "polish":
+//       return "Witamy";
+//     case "spanish":
+//       return "Bienvenido";
+//     case "swedish":
+//       return "Valkommen";
+//     case "welsh":
+//       return "Croeso";
+//     case "latvian":
+//       return "Gaidits";
+//     default:
+//       return "Welcome";
+//   }
+// };
+// console.log(greet("lithuanian"));
+
+// function greet(language) {
+//   const greeting = {
+//     english: "Welcome",
+//     czech: "Vitejte",
+//     danish: "Velkomst",
+//     dutch: "Welkom",
+//     estonian: "Tere tulemast",
+//     finnish: "Tervetuloa",
+//     flemish: "Welgekomen",
+//     french: "Bienvenue",
+//     german: "Willkommen",
+//     irish: "Failte",
+//     italian: "Benvenuto",
+//     latvian: "Gaidits",
+//     lithuanian: "Laukiamas",
+//     polish: "Witamy",
+//     spanish: "Bienvenido",
+//     swedish: "Valkommen",
+//     welsh: "Croeso",
+//   };
+
+//   return greeting[language] ?? greeting.english;
+// }
+
+// Your order, please
+
+// // Ваша задача — отсортировать заданную строку.
+// Каждое слово в строке будет содержать одно число.Это число обозначает позицию, которую слово должно занимать в результате.
+
+// // Примечание. Числа могут быть от 1 до 9. Таким образом, первым словом будет 1 (а не 0).
+
+// // Если входная строка пуста, верните пустую строку. Слова во входной строке будут содержать только допустимые последовательные числа.
+
+// const str = "is2 Thi1s T4est 3a";
+
+// console.log(str.split("/").)
+
+// const arr = [5, 8, 6, 3, 4, 7];
+
+// const odds = arr.filter((x) => x % 2).sort((a, b) => a - b);
+// console.log(odds);
+
+// console.log(arr.map((x) => (x % 2 ? odds.shift() : x)));
+
+// const sortArray = (arr) => {
+//   const odds = arr.filter((x) => x % 2).sort((a, b) => a - b);
+
+//   return arr.map((x) => (x % 2 ? odds.shift() : x));
+// };
+
+// console.log(sortArray(arr));
+
+
+
