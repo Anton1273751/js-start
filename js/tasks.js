@@ -1144,11 +1144,6 @@
 
 // const arr = [5, 8, 6, 3, 4, 7];
 
-// const odds = arr.filter((x) => x % 2).sort((a, b) => a - b);
-// console.log(odds);
-
-// console.log(arr.map((x) => (x % 2 ? odds.shift() : x)));
-
 // const sortArray = (arr) => {
 //   const odds = arr.filter((x) => x % 2).sort((a, b) => a - b);
 
@@ -1157,5 +1152,77 @@
 
 // console.log(sortArray(arr));
 
+// const str = "CfgjdiHlkB.....$";
 
+// const arr = str.split("")
+// const res = []
 
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] === arr[i].toUpperCase()) {
+//     res.push(i)
+//   }
+// }
+
+// console.log(res);
+
+const recipties = [
+  {
+    name: "Pelmeni (Meat dumplings)",
+    ingridiensts: [
+      "3,5 glasses of flour",
+      "5 eggs",
+      "2 teaspoons of salt",
+      "pepper",
+      "1 kg of meat",
+      "500g of onions",
+    ],
+  },
+  {
+    name: "Apple crumble",
+    ingridiensts: [
+      "3 big apples",
+      "300 g of flour",
+      "100 g of sugar",
+      "200 g of butter",
+      "a bit of cream",
+      "water",
+    ],
+  },
+  {
+    name: "Sandwiches",
+    ingridiensts: [
+      "wheat French bread or sliced",
+      "liver (300 grams)",
+      "mushrooms (200 grams)",
+      "butter (100 grams)",
+      "vanilla (4 grams)",
+      "baking powder (2 teaspoons)",
+      "vegetable oil for frying",
+    ],
+  },
+];
+
+// const newH3 = document.createElement("h3"); //Пример
+// const newLi = document.createElement("li");
+// document.body.append(newH3);
+// newH3.append(newLi);
+// recipties.forEach((element) => {
+//   newH3.append(element.name);
+// });
+// newH3.append(newLi);
+// recipties.forEach((element) => {
+//   newLi.append(element.ingridiensts);
+// });
+
+recipties.forEach((elem) => {
+  const newH3 = document.createElement("h3");
+  newH3.className = "resiptie__title";
+  document.body.append(newH3);
+  const newUl = document.createElement("ul");
+  newH3.append(newUl);
+  const newli = document.createElement("li");
+  newUl.className = "resiptie__list";
+  newUl.append(newli);
+  newH3.prepend(elem.name);
+  newli.append(elem.ingridiensts);
+});
