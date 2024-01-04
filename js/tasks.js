@@ -1202,6 +1202,111 @@ const recipties = [
   },
 ];
 
+// recipties.forEach((elem) => {
+//   const newH3 = document.createElement("h3");
+//   newH3.className = "resiptie__title";
+//   newH3.textContent = el.name;
+//   document.body.append(newH3);
+//   const newUl = document.createElement("ul");
+//   newH3.append(newUl);
+//   const newli = document.createElement("li");
+//   newli.textContent = elem.ingridiensts;
+//   newUl.className = "resiptie__list";
+//   newUl.append(newli);
+// });
+
+// function createCard({ name, ingridiensts }) {
+//   const cardNode = document.createElement("div");
+//   const cardTitleNode = document.createElement("h3");
+//   const cardListNode = document.createElement("ul");
+
+//   cardTitleNode.className = "resiptie__title";
+//   cardListNode.className = "resiptie__list";
+
+//   cardTitleNode.textContent = name;
+
+//   ingridiensts.forEach((ingridient) => {
+//     const cardliNode = document.createElement("li");
+//     cardliNode.textContent = ingridient;
+//     cardListNode.append(cardliNode);
+//   });
+
+//   cardNode.append(cardTitleNode, cardListNode);
+
+//   return cardNode;
+// }
+
+// function renderRecipies(arr) {
+//   arr.forEach((recip) => {
+//     const card = createCard(recip);
+//     document.body.append(card);
+//   });
+// }
+
+// renderRecipies(recipties);
+
+// const articles = [
+//   {
+//     title: "Заголовок статьи 1",
+//     date: "22-01-2024",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nobis enim magnam laboriosam alias magni dicta cumque nulla voluptatibus! Sunt voluptas nobis error, amet molestias tempora veniam optio dignissimos quia",
+//   },
+//   {
+//     title: "Заголовок статьи 2",
+//     date: "20-11-2022",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nobis enim magnam laboriosam alias magni dicta cumque nulla voluptatibus! Sunt voluptas nobis error, amet molestias tempora veniam optio dignissimos quia",
+//   },
+//   {
+//     title: "Заголовок статьи 3",
+//     date: "02-05-2019",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nobis enim magnam laboriosam alias magni dicta cumque nulla voluptatibus! Sunt voluptas nobis error, amet molestias tempora veniam optio dignissimos quia",
+//   },
+//   {
+//     title: "Заголовок статьи 4",
+//     date: "22-01-2001",
+//     description:
+//       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nobis enim magnam laboriosam alias magni dicta cumque nulla voluptatibus! Sunt voluptas nobis error, amet molestias tempora veniam optio dignissimos quia",
+//   },
+// ];
+
+// const createCard = ({ title, date, description }) => {
+//   const cardNode = document.createElement("div");
+
+//   const cardTitleNode = document.createElement("h3");
+//   const cardDateNode = document.createElement("time");
+//   const cardTextNode = document.createElement("p");
+//   cardTitleNode.textContent = title;
+//   cardDateNode.textContent = date;
+//   cardTextNode.textContent = description;
+
+//   cardNode.append(cardTitleNode, cardDateNode, cardTextNode);
+//   return cardNode;
+// };
+// const createCard = ({ title, date, description }) => {
+//   const cardNode = document.createElement("div");
+//   cardNode.innerHTML = `
+//                         <h1>${title}</h1>
+//                         <time>${date}</time>
+//                         <p>${description}</p>
+//                         `;
+
+//   return cardNode;
+// };
+
+// // document.body.append(createCard(articles[0]));
+
+// const renderCards = (arr, wrapper) => {
+//   arr.forEach((element) => {
+//     const card = createCard(element);
+//     wrapper.append(card);
+//   });
+// };
+
+// renderCards(articles, document.body);
+
 // const newH3 = document.createElement("h3"); //Пример
 // const newLi = document.createElement("li");
 // document.body.append(newH3);
@@ -1214,15 +1319,176 @@ const recipties = [
 //   newLi.append(element.ingridiensts);
 // });
 
-recipties.forEach((elem) => {
-  const newH3 = document.createElement("h3");
-  newH3.className = "resiptie__title";
-  document.body.append(newH3);
-  const newUl = document.createElement("ul");
-  newH3.append(newUl);
-  const newli = document.createElement("li");
-  newUl.className = "resiptie__list";
-  newUl.append(newli);
-  newH3.prepend(elem.name);
-  newli.append(elem.ingridiensts);
-});
+// const str = "areiobusbtr";
+
+// const arr = str
+//   .split("")
+//   .filter(
+//     (elem) =>
+//       elem === "a" ||
+//       elem === "e" ||
+//       elem === "i" ||
+//       elem === "o" ||
+//       elem === "u"
+//   ).length;
+// console.log(arr);
+
+// const getCount = (str) => {
+//   const arr = str
+//     .split("")
+//     .filter(
+//       (elem) =>
+//         elem === "a" ||
+//         elem === "e" ||
+//         elem === "i" ||
+//         elem === "o" ||
+//         elem === "u"
+//     ).length;
+//   return arr;
+// };
+
+// console.log(getCount(str));
+
+// function getCount(str) { //короткий пример
+//   return (str.match(/[aeiou]/gi) || []).length;
+// }
+
+// const a = 1;
+// const b = 6;
+
+// const between = (a, b) => {
+//   const arr = [];
+//   for (let index = a; index <= b; index++) {
+//     arr.push(index);
+//   }
+//   return arr;
+// };
+
+// console.log(between(1, 6));
+
+// const rowSumOddNumbers = (n) => {
+//   return n * n * n;
+// };
+
+// console.log(rowSumOddNumbers(4));
+
+// const str = "sam harris";
+
+// const arr = str.replace(" ", "").split("");
+// console.log(arr);
+// const result = arr.filter((elem) => elem === elem.toUpperCase());
+// console.log(result.join("."));
+
+// const abbrevName = (str) => {
+//   const arr = str
+//     .split("")
+//     .filter((elem) => elem === elem.toUpperCase())
+//     .join("")
+//     .replace(" ", ".");
+//   return arr;
+// };
+// console.log(abbrevName(str));
+
+// function abbrevName(name) {
+//   return (
+//     name[0].toUpperCase() + "." + name[name.indexOf(" ") + 1].toUpperCase()
+//   );
+// }
+
+// const x = [1, 2, 3];
+
+// const maps = (arr) => {
+//   return arr.map((elem) => elem + elem);
+// };
+
+// console.log(maps(x));
+
+// const sumStr = (a, b) => {
+//   const result = Number(a) + Number(b);
+//   return result.toString();
+// };
+
+// console.log(sumStr("4", "5"));
+
+// const arr = [
+//   "Keep",
+//   "Remove",
+//   "Keep",
+//   "Remove",
+//   "Keep",
+//   "Remove",
+//   "Keep",
+//   "Remove",
+//   "Keep",
+// ];
+
+// const removeEveryOther = (arr) => {
+//   for (let i = 1; i < arr.length; i++) {
+//     arr.splice(i, 1);
+//   }
+//   return arr;
+// };
+
+// console.log(removeEveryOther(arr));
+
+// const arr = [1, 5.2, 4, 0, -1];
+
+// const sum = (numbers) => {
+//   if (numbers.length === 0) {
+//     return 0;
+//   }
+//   return numbers.reduce(function (a, b) {
+//     return a + b;
+//   });
+// };
+
+// console.log(sum(arr));
+
+// function sum(numbers) { //Альтернатива
+//   return numbers.reduce((a, b) => a + b, 0);
+// }
+
+// const countBy = (x, n) => {
+//   let z = [];
+//   for (let i = 1; i <= n; i++) {
+//     z.push(i * x);
+//   }
+//   return z;
+// };
+
+// console.log(countBy(1, 10));
+
+// let boll = true;
+
+// const booleanToString = (b) => String(b);
+
+// const arr = ["Telescopes", "Glasses", "Eyes", "Monocles"];
+
+// console.log(arr[0].length);
+// const sortByLength = (arr) => {
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr.length; j++) {
+//       if (arr[j + 1].length < arr[j].length) {
+//         let tmp = arr[j];
+//         arr[j] = arr[j + 1];
+//         arr[j + 1] = tmp;
+//       }
+//     }
+//   }
+// };
+
+// console.log(sortByLength(arr));
+
+// function sortByLength(array) {
+//   return array.sort((a, b) => a.length - b.length);
+// }
+
+// const square = (num) => num * num;
+
+// console.log(ge);
+
+const arr = [34, -345, -1, 100];
+
+const findSmallestInt = (args) => args.reduce((a, b) => Math.min(a, b));
+
+console.log(findSmallestInt(arr));
