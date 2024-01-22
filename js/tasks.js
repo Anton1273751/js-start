@@ -1487,8 +1487,24 @@ const recipties = [
 
 // console.log(ge);
 
-const arr = [34, -345, -1, 100];
+// const arr = [34, -345, -1, 100];
 
-const findSmallestInt = (args) => args.reduce((a, b) => Math.min(a, b));
+// const findSmallestInt = (args) => args.reduce((a, b) => Math.min(a, b));
 
-console.log(findSmallestInt(arr));
+// console.log(findSmallestInt(arr));
+
+// const str = "String";
+
+// // console.log(arr);
+
+// for (let i = 0; i <= str.length; i++) {
+//   str[i] + str[i];
+// }
+
+// console.log(str);
+// const doubleChar = (str) => {
+//   let char = str.split("").forEach((elem) => elem + elem);
+//   return char;
+// };
+
+// console.log(doubleChar(str));
